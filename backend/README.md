@@ -48,14 +48,15 @@ These are the files you'd want to edit in the backend:
 
 
 
-Endpoints
-
+## Endpoints
+```
 1. To enable cross-domain requests usse FLASK Cors and set response headers. 
     Access-Control-Allow-Headers
     Access-Control-Allow-Methods
 
 2. GET requests for questions, including pagination (every 10 questions). This endpoint should return a list of questions, 
 number of total questions, current category, categories. 
+
 GET '/api/v1.0/questions'
 - Fetches a paginated set of questions, a total number of questions, all categories and current category string. 
 - Request Arguments: page - integer
@@ -181,7 +182,7 @@ The API will return three error types when requests fail:
 400: Bad Request
 404: Resource Not Found
 422: Not Processable
-
+```
 ## Review Comment to the Students
 ```
 This README is missing documentation of your endpoints. Below is an example for your endpoint to get all categories. Please use it as a reference for creating your documentation and resubmit your code. 
